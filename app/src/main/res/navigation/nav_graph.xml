@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.com.odontoprev.app.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_missionsFragment"
+            app:destination="@id/missionsFragment" />
+    </fragment>
+
+    <!-- Missions Fragment -->
+    <fragment
+        android:id="@+id/missionsFragment"
+        android:name="br.com.odontoprev.app.MissionsFragment"
+        android:label="Missões"
+        tools:layout="@layout/fragment_missions">
+
+        <!-- Action to More Missions -->
+        <action
+            android:id="@+id/action_missionsFragment_to_moreMissionsFragment"
+            app:destination="@id/moreMissionsFragment" />
+
+        <!-- Action to Trocar Pontos -->
+        <action
+            android:id="@+id/action_missionsFragment_to_trocarPontosFragment"
+            app:destination="@id/trocarPontosFragment" />
+
+        <!-- Action to Registrar Foto -->
+        <action
+            android:id="@+id/action_missionsFragment_to_registrarFotoFragment"
+            app:destination="@id/registrarFotoFragment" />
+    </fragment>
+
+    <!-- More Missions Fragment -->
+    <fragment
+        android:id="@+id/moreMissionsFragment"
+        android:name="br.com.odontoprev.app.MoreMissionsFragment"
+        android:label="Mais Missões"
+        tools:layout="@layout/fragment_more_missions">
+
+        <!-- Action to Home Fragment -->
+        <action
+            android:id="@+id/action_moreMissionsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+        <!-- Action to Registrar Foto Fragment -->
+        <action
+            android:id="@+id/action_moreMissionsFragment_to_registrarFotoFragment"
+            app:destination="@id/registrarFotoFragment" />
+    </fragment>
+
+    <!-- Registrar Foto Fragment -->
+    <fragment
+        android:id="@+id/registrarFotoFragment"
+        android:name="br.com.odontoprev.app.RegistrarFotoFragment"
+        android:label="Registrar Foto"
+        tools:layout="@layout/fragment_registrar_foto">
+
+        <!-- Action to Missions Fragment -->
+        <action
+            android:id="@+id/action_registrarFotoFragment_to_missionsFragment"
+            app:destination="@id/missionsFragment" />
+
+        <!-- Action to More Missions Fragment (nova ação) -->
+        <action
+            android:id="@+id/action_registrarFotoFragment_to_moreMissionsFragment"
+            app:destination="@id/moreMissionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/trocarPontosFragment"
+        android:name="br.com.odontoprev.app.TrocarPontosFragment">
+        <action
+            android:id="@+id/action_trocarPontosFragment_to_missionsFragment"
+            app:destination="@id/missionsFragment" />
+    </fragment>
+</navigation>
+
+
+
+
+

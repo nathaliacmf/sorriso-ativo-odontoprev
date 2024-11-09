@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".TrocarPontosFragment">
+
+<androidx.fragment.app.FragmentContainerView
+    android:id="@+id/fragmentContainerView4"
+    android:name="br.com.odontoprev.app.TrocarPontosFragment"
+    android:layout_width="413dp"
+    android:layout_height="71dp"
+    android:background="#0363F6"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-3dp" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sorriso Ativo - Missões"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    tools:layout_editor_absoluteX="99dp"
+    tools:layout_editor_absoluteY="26dp" />
+
+<TextView
+    android:id="@+id/textView22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="&lt;"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    tools:layout_editor_absoluteX="28dp"
+    tools:layout_editor_absoluteY="26dp" />
+
+<TextView
+    android:id="@+id/tv_descricao"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/fragmentContainerView4"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Realize missões para obter pontos. Seus pontos podem ser trocados por prêmios e benefícios exclusivos!"
+    android:textColor="#888888"
+    android:textSize="14sp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="116dp" />
+
+<TextView
+    android:id="@+id/tv_missoes_concluidas"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="32dp"
+    android:text="Missões Concluídas"
+    android:textColor="#1E88E5"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv_descricao" />
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv_missoes_concluidas">
+
+    <TextView
+        android:id="@+id/tv_missao_concluida_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tirar foto escovando os dentes"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_missao_concluida_frequencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diária"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_missao_concluida_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Concluída"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_missao_concluida_pontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pontos Obtidos: 25 pontos"
+        android:textColor="#1E88E5" />
+</LinearLayout>
+
+<TextView
+    android:id="@+id/tv_missoes_ativas"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="148dp"
+    android:text="Missões Ativas"
+    android:textColor="#1E88E5"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv_missoes_concluidas" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:layout_editor_absoluteY="391dp">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:background="#E97C7C"
+        android:src="@drawable/smile_shine_icon"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:id="@+id/tv_missao_ativa_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:text="Tirar foto passando fio dental"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_missao_ativa_frequencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mensal"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:id="@+id/tv_missao_ativa_recompensa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:text="Recompensa: 500 pontos"
+        android:textColor="#4CAF50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_missao_ativa_frequencia" />
+
+    <Button
+        android:id="@+id/btn_realizar_missao"
+        android:layout_width="352dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Realizar Missão"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
